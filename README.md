@@ -31,9 +31,9 @@ The web server inside the container is listening on port 12006 you can use whate
 
 Optional Variables to Use:
 
-`GRAPHITE_PORT_2003_TCP_ADDR` -- port that carbon is listening on
-`GRAPHITE_IP_ADDR` -- carbon IP address
-`DEBUG=1` -- will show all access logs (no ip or date, it's only for debug mode) -- it will be super spammy, I am sending more than 10 000 metrics per 10 seconds
+- `GRAPHITE_PORT_2003_TCP_ADDR` -- port that carbon is listening on
+- `GRAPHITE_IP_ADDR` -- carbon IP address
+- `DEBUG=1` -- will show all access logs (no ip or date, it's only for debug mode) -- it will be super spammy, I am sending more than 10 000 metrics per 10 seconds
 
 
 
