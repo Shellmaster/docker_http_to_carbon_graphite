@@ -14,16 +14,16 @@ PORT_NUMBER = 12006 # inside the container so doesn't really matter, listen on 1
 
 # set default server if not specified
 try:
-	SERVER = os.environ['GRAPHITE_PORT_2003_TCP_ADDR']
+	SERVER = os.environ['GRAPHITE_IP_ADDR']
 except Exception:
-	print "Environment Variable GRAPHITE_PORT_2003_TCP_ADDR is not set , using port 2003"
+	print "Environment Variable GRAPHITE_IP_ADDR is not set , using 127.0.0.1"
 	SERVER = "127.0.0.1"
 
 # set default port if not specified
 try:
-	PORT = os.environ['GRAPHITE_IP_ADDR']
+	PORT = os.environ['GRAPHITE_PORT_2003_TCP_ADDR']
 except Exception:
-	print "Environment Variable GRAPHITE_IP_ADDR is not set , using 127.0.0.1"
+	print "Environment Variable GRAPHITE_PORT_2003_TCP_ADDR is not set , using port 2003"
 	PORT = 2003
 # enable debug mode
 try:
